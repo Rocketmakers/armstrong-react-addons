@@ -7,17 +7,10 @@
 @import "./shared/variables";
 
 /********************************************
-  TYPOGRAPHY VARIABLES
-********************************************/
-
-$body-font: -apple-system, BlinkMacSystemFont, avenir next, avenir, helvetica, helvetica neue, Ubuntu, segoe ui, arial, sans-serif;
-
-/********************************************
   TYPOGRAPHY STYLING
 ********************************************/
 
 body {
-    font-family: $body-font;
     font-size: $font-size-small;
     font-weight: 300;
     background: white;
