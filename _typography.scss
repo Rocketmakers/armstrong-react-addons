@@ -1,0 +1,88 @@
+/********************************************
+  STANDARD IMPORTS
+********************************************/
+
+@import "~armstrong-react/dist/imports";
+@import "./shared/_as-variables";
+@import "./shared/variables";
+
+/********************************************
+  TYPOGRAPHY VARIABLES
+********************************************/
+
+$body-font: -apple-system, BlinkMacSystemFont, avenir next, avenir, helvetica, helvetica neue, Ubuntu, segoe ui, arial, sans-serif;
+
+/********************************************
+  TYPOGRAPHY STYLING
+********************************************/
+
+body {
+    font-family: $body-font;
+    font-size: $font-size-small;
+    font-weight: 300;
+    background: white;
+    color: $gray-very-dark;
+    line-height: 1.6;
+}
+
+h1, h2, h3, h4, h5, h6, p, pre, blockquote {
+    font-weight: 300;
+    @extend %m-top-medium;
+    @extend %m-bottom-medium;
+}
+
+h1 {
+    font-size: $font-size-xlarge;
+    font-weight: 800;
+    line-height: 1.3;
+}
+
+h2 {
+    font-size: $font-size-large;
+    font-weight: 500;
+    line-height: 1.5;
+}
+
+h3 {
+    text-transform: uppercase;
+    font-size: $font-size-xsmall;
+    font-weight: 500;
+    font-size: $font-size-small;
+    line-height: 1.5;
+}
+
+b, strong {
+    font-weight: 600;
+}
+
+a {
+    color: $color-info;
+}
+
+ul, ol {
+    @extend %m-top-medium;
+    @extend %m-bottom-medium;
+    margin: 0;
+    padding: 0;
+    li {
+        @extend %m-bottom-small;
+        padding-left: $spacing-xsmall;
+    }
+}
+
+code, pre {
+    background-color: $gray-very-light;
+}
+
+pre {
+    white-space: pre-wrap;
+    word-wrap: break-word;
+    @extend %p-small;
+    @extend %f-size-xsmall;
+}
+
+blockquote {
+    border-left: 7px solid $gray-very-light;
+    padding-left: $spacing-medium;
+    margin-left: 0;
+}
