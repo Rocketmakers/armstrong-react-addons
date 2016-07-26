@@ -1,7 +1,11 @@
-// STANDARD IMPORTS
+/********************************************
+  STANDARD IMPORTS
+********************************************/
+
+//Armstrong core
 @import "~armstrong-react/dist/imports";
-@import "./shared/_as-variables.scss";
-@import "./shared/_variables.scss";
+//Custom overrides of Armstrongs variables
+@import "./../_armstrong.variables";
 
 /********************************************
   TABLE STYLING
