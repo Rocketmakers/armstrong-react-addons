@@ -60,10 +60,9 @@ $responsive-sizes: (
 
 //Center contents
 @mixin center-content() {
-    margin: auto;
-    text-align: center;
-    button, img {
-        margin: auto;
+    * {
+        margin: auto !important;
+        text-align: center;
     }
 }
 
@@ -143,9 +142,9 @@ $responsive-sizes: (
             .col.rs-#{nth($size, 1)}-center-content {
                 @include center-content();
             }
-            .grid.rs-#{nth($size, 1)}-spaced {
+            .grid.rs-#{nth($size, 1)}-spaced, .row.rs-#{nth($size, 1)}-spaced {
                 padding-bottom: 0 !important;
-                    & > .row > .col {
+                    & > .row > .col, > .col {
                         @include spaced();
                     }
                 }
