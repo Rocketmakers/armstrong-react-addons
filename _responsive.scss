@@ -1,12 +1,15 @@
 /********************************************
-  RESPONSIVE MIXINS
+  STANDARD IMPORTS
 ********************************************/
 
-//// RESPONSIVE VARIABLES
-$responsive-large: 70rem;
-$responsive-medium: 55rem;
-$responsive-small: 45rem;
-$responsive-xsmall: 35rem;
+//Armstrong core
+@import "~armstrong-react/dist/imports";
+//Custom overrides of Armstrongs variables
+@import "./../_armstrong.variables";
+
+/********************************************
+  RESPONSIVE MIXINS
+********************************************/
 
 //// RESPONSIVE SIZE DICTIONARY
 $responsive-sizes: (
