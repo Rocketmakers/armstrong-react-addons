@@ -58,12 +58,10 @@ $responsive-sizes: (
     }
 }
 
-//Center contents
+//Center content on an element
 @mixin center-content() {
-    * {
         margin: auto !important;
         text-align: center;
-    }
 }
 
 //Add a margin below the columns
@@ -98,7 +96,7 @@ $responsive-sizes: (
     width: 100%;
 };
 
-.col.rs-xlarge-center-content {
+.rs-xlarge-center-content {
     @include center-content();
 }
 
@@ -138,8 +136,8 @@ $responsive-sizes: (
             .col.rs-#{nth($size, 1)}-unfix {
                 @include unfix();
             }
-            //Center content in a column
-            .col.rs-#{nth($size, 1)}-center-content {
+            //Center content on an element
+            .rs-#{nth($size, 1)}-center-content {
                 @include center-content();
             }
             .grid.rs-#{nth($size, 1)}-spaced, .row.rs-#{nth($size, 1)}-spaced {
