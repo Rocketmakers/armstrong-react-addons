@@ -11,6 +11,19 @@
   TYPOGRAPHY STYLING
 ********************************************/
 
+/********************************************
+  STANDARD IMPORTS
+********************************************/
+
+//Armstrong core
+@import "~armstrong-react/dist/imports";
+//Custom overrides of Armstrongs variables
+@import "./../shared/_variables.scss";
+
+/********************************************
+  TYPOGRAPHY STYLING
+********************************************/
+
 body {
     font-size: $font-size-small;
     font-weight: 300;
@@ -19,10 +32,14 @@ body {
     line-height: 1.6;
 }
 
-h1, h2, h3, h4, h5, h6, p, pre, blockquote {
+h1, h2, h3, h4, h5, h6,pre, blockquote {
     font-weight: 300;
-    @extend %m-top-medium;
-    @extend %m-bottom-medium;
+    margin-top: 0em;
+    margin-bottom: 1em;
+}
+
+p {
+    margin-bottom: 2em;
 }
 
 h1 {
@@ -54,11 +71,11 @@ a {
 }
 
 ul, ol {
-    @extend %m-top-medium;
-    @extend %m-bottom-medium;
+    margin: 2em 0;
     margin: 0;
     padding: 0;
     li {
+        margin-bottom: 0.5em;
         @extend %m-bottom-small;
         padding-left: $spacing-xsmall;
     }
