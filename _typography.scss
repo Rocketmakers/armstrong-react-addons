@@ -32,7 +32,7 @@ body {
     line-height: 1.6;
 }
 
-h1, h2, h3, h4, h5, h6,pre, blockquote {
+h1, h2, h3, h4, h5, h6, pre, blockquote {
     font-weight: 300;
     margin-top: 0em;
     margin-bottom: 1em;
@@ -92,8 +92,17 @@ pre {
     @extend %f-size-xsmall;
 }
 
+pre, blockquote {
+    margin-top: $spacing-medium;
+    margin-bottom: $spacing-large;
+}
+
 blockquote {
     border-left: 7px solid $gray-very-light;
     padding-left: $spacing-medium;
     margin-left: 0;
+}
+
+table {
+    margin-bottom: $spacing-medium;
 }
