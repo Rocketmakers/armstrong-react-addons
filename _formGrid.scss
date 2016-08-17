@@ -19,8 +19,8 @@
             }
         }
         > .col {
-            @extend %m-right-xsmall;
-            @extend %m-bottom-small;
+            margin-right: $spacing-xsmall;
+            margin-bottom: $spacing-small;
             &:last-of-type {
                 margin-right: 0;
             }
